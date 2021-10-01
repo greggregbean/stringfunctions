@@ -138,7 +138,7 @@ int getline(char** str, int len, FILE *fp)
 
     int lenOfLine = 0;
 
-    int sym;
+    int sym = 0;
 
     while (sym = getc(fp) != '\n')
     {
@@ -165,7 +165,7 @@ int getline(char** str, int len, FILE *fp)
 
     int num = 0;
 
-    int sym1;
+    int sym1 = 0;
 
     while (((sym1 = getc(fp)) != '\n') && (sym1 != '\0'))
     {
